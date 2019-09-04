@@ -1,11 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LoginPage from './pages/login/login';
 
 function Aaa() {
   return (
     <div className="App">
-      <div className="btn btn-primary">hello</div>
+      <LoginPage></LoginPage>
     </div>
   );
 }
