@@ -1,15 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import LoginPage from './pages/login/login';
-import Dashboard from './pages/dashboard/dashboard';
-import Profile from './pages/profile/profile';
-import Home from './pages/home/home';
+import MainRouter from './config/router';
+import MenuBar from './components/menubar/menu';
 
 function Aaa() {
   return (
     <div className="App">
-      <LoginPage></LoginPage>
+      <MenuBar></MenuBar>
+      <MainRouter></MainRouter>     
     </div>
   );
 }
