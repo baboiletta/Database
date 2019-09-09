@@ -10,8 +10,8 @@ class MainRouter extends React.Component{
         return(
             <BrowserRouter>
                 <Switch>
-                    <Route path='/' exact component={Home}></Route>
-                    <Route path='/login' exact component={LoginPage}></Route>
+                    <Route path='/' exact component={LoginPage}></Route>
+                    <Route path='/home' exact component={Home}></Route>
                     <Route path='/profile' exact component={Profile}></Route>
                     <Route path='/dashboard' exact component={Dashboard}></Route>
 
