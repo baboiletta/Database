@@ -1,6 +1,7 @@
 input.form-control {
   font-size: 18px;
-  font-style: italic; }
+  font-style: italic;
+  height: auto; }
 
 .justify-content-center.links {
   font-size: 20px;
@@ -20,9 +21,6 @@ label.custom-control-label {
   top: 7px;
   left: 0; }
 
-.custom-checkbox {
-  /* background: white; */ }
-
 button.btn.login_btn {
   background: #c33f3c;
   width: 100%;
@@ -35,14 +33,11 @@ button.btn.login_btn {
   height: 53px;
   /* border-radius: 36px; */ }
 
-.input-group-append {
-  font-size: 35px;
-  width: 53px;
-  text-align: center;
-  height: 53px;
+span.input-group-text {
+  color: white;
   background: #c33f3c;
-  border-radius: 5px 0 0 5px;
-  color: white; }
+  border: none;
+  padding: 0 16px; }
 
 .col-sm-8.push-4.login {
   position: absolute;
