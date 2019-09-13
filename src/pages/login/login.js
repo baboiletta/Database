@@ -1,6 +1,8 @@
 import React from 'react';
 import './login.css';
-// import './assets/anh/1 .png';
+import img_logo from '../../assets/anh/1.png';
+import {FaUser} from "react-icons/fa";
+import {FaKey} from "react-icons/fa";
 
 
 class LoginPage extends React.Component {
@@ -15,13 +17,13 @@ class LoginPage extends React.Component {
                                     <form>
                                     <div className="input-group mb-3 ">
                                         <div className="input-group-append">
-                                            <span className="input-group-text"><i className="fa fa-user"></i></span>
+                                            <span className="input-group-text"><FaUser /></span>
                                         </div>
                                         <input type="text"   className="form-control input_user" value="" placeholder="username"></input>
                                     </div>
                                     <div className="input-group ">
                                         <div className="input-group-append">
-                                            <span className="input-group-text"><i className="fa fa-key"></i></span>
+                                            <span className="input-group-text"><FaKey /> </span>
                                         </div>
                                         <input type="password" className="form-control input_pass" value="" placeholder="password"></input>
                                     </div>
@@ -53,7 +55,7 @@ class LoginPage extends React.Component {
                         <div className="logo">
                             <div className="nenxam"></div>
                             <div className="nentrang"></div>
-                            <img src="images/1 .png" alt=""></img>
+                            <img src={img_logo} alt=""></img>
                         </div>
                     </div> 
                       {/* <!-- hetnenxanh --> */}
