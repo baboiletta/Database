@@ -1,16 +1,16 @@
 import React from 'react';
 import FooterPage from '../../components/footer/footer';
 
-class LienHe extends React.Component{
+
+class Profile extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div>Lien He</div>
+                <div>Profile</div>
                 <FooterPage></FooterPage>
 
             </React.Fragment>
         )
     }
 }
-
-export default LienHe
+export default Profile

@@ -1,9 +1,14 @@
 import React from 'react';
+import FooterPage from '../../components/footer/footer';
 
 class TuyenDung extends React.Component{
     render(){
         return(
-            <div>Tuyen Dung</div>
+            <React.Fragment>
+                <div>Tuyen Dung</div>
+                <FooterPage></FooterPage>
+
+            </React.Fragment>
         )
     }
 }

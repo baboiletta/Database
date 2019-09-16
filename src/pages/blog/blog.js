@@ -1,9 +1,14 @@
 import React from 'react';
+import FooterPage from '../../components/footer/footer';
 
 class Blog extends React.Component{
     render(){
         return(
-            <div>Blog</div>
+            <React.Fragment>
+                 <div>Blog</div>
+            <FooterPage></FooterPage>
+        
+            </React.Fragment>
         )
     }
 }
