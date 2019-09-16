@@ -1,14 +1,14 @@
 import React from 'react';
 import MenuBar from '../../components/menubar/menu';
 
-class Home extends React.Component{
+class GioiThieu extends React.Component{
     render(){
         return(
             <React.Fragment>
-               
+               <div>Gioi Thieu</div>
             </React.Fragment>
         )
     }
 }
 
-export default Home
+export default GioiThieu

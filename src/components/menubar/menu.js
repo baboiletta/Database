@@ -1,47 +1,44 @@
 import React from 'react';
-
+import {Navbar,Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap';
 class MenuBar extends React.Component {
     render() {
         return (
-            
-    <React.Fragment>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="nav navbar-nav">
-                   <li class="active">
-                       <a href="/login">Login</a>
-                   </li>
-                   <li>
-                       <a href="/home">Home</a>
-                   </li>
-                   <li>
-                       <a href="/profile">Profile</a>
-                   </li>
-                   <li>
-                       <a href="/dashboard">Dashboard</a>
-                   </li>
-                   <li>
-                       <a href="/tuyendung">Tuyen Dung</a>
-                   </li>
-               </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-         
-    </React.Fragment>
-           
-          
-           
-           
-            
+            <React.Fragment>
+                <Navbar bg="light" expand="lg">
+                    <Navbar.Brand href="#home">Green Academy</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link href="/">Trang Chu</Nav.Link>
+                            {/* <Nav.Link href="/khoadaotao">Khoa Dao Tao</Nav.Link> */}
+                            <NavDropdown title="Khoa Dao Tao" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Web Design</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Mobile</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action/3.4">FullStack Developer</NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="/blog">Blog</Nav.Link>
+                            <Nav.Link href="/gioithieu">Gioi Thieu</Nav.Link>
+                            <Nav.Link href="/tuyendung">Tuyen Dung</Nav.Link>
+                            <Nav.Link href="/lienhe">Lien He</Nav.Link>
+
+                        </Nav>
+                        <Form inline>
+                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                            <Button variant="outline-success">Search</Button>
+                        </Form>
+                    </Navbar.Collapse>
+                </Navbar>
+
+
+            </React.Fragment>
+
+
+
+
+
         )
     }
 }
