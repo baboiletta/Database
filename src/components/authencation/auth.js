@@ -1,5 +1,5 @@
 import React from 'react';
-import { Cookie } from 'universal-cookie'
+import  Cookie  from 'universal-cookie'
 import { Redirect} from 'react-router-dom'
 class Auth extends React.Component{
     constructor(props){
