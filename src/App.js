@@ -9,9 +9,9 @@ import LoginPage from './pages/login/login';
 function Aaa() {
   return (
     <div className="App">
-      <LoginPage></LoginPage>
-      {/* <MenuBar></MenuBar> */}
-      {/* <MainRouter></MainRouter>      */}
+      {/* <LoginPage></LoginPage> */}
+      <MenuBar></MenuBar>
+      <MainRouter></MainRouter>     
     </div>
   );
 }
