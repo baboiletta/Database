@@ -8,7 +8,7 @@ import Blog from '../pages/blog/blog';
 import TuyenDung from '../pages/tuyendung/tuyendung';
 import LienHe from '../pages/lienhe/lienhe';
 import Profile from '../pages/profile/profile';
-import Auth from '../components/authencation/auth';
+import Auth from '../services/auth';
 
 
 const MainRouter = () => (
@@ -33,9 +33,6 @@ const MainRouter = () => (
         </BrowserRouter>
     </main>
 )
-
-
-
 
 // const MainRouter = () => {
 //     return(
