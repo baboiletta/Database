@@ -2,15 +2,16 @@ import React from 'react';
 import FooterPage from '../../components/footer/footer';
 
 
-class Profile extends React.Component{
-    render(){
-        return(
+class KhoaDaoTao extends React.Component {
+    render() {
+        return (
             <React.Fragment>
-                <div>Profile</div>
+                <div>Khoa Dao Tao</div>
                 <FooterPage></FooterPage>
 
             </React.Fragment>
-        )
+        )        
     }
 }
-export default Profile
+
+export default KhoaDaoTao
