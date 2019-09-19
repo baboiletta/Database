@@ -13,7 +13,7 @@ function Aaa() {
       {/* <LoginPage></LoginPage> */}
       <MenuBar></MenuBar>
       <MainRouter></MainRouter>     
-      <FooterPage></FooterPage>
+      {/* <FooterPage></FooterPage> */}
     </div>
   );
 }
