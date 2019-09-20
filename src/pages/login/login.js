@@ -11,24 +11,37 @@ class LoginPage extends React.Component {
   constructor(){
     super()
     this.state = { 
-      logined: false
+      // logined: false
+      logined: true
     }
 
   }
-  clicked = (event) => {
-    // console.log(event)
-    let cooki = new Cookies()
-    cooki.set('dadangnhap','thanhcong')
-    this.setState({
-      logined: cooki.get('dadangnhap') ==='thanhcong'
-    })
+  // dangnhap = (event) => {
+  //   // console.log(event)
+  //   let cooki = new Cookies()
+  //   cooki.set('dadangnhap','thanhcong')
+  //   this.setState({
+  //     logined: cooki.get('dadangnhap') ==='thanhcong'
+  //   })
     
-    }
-  chuyenHuong(){
-    if (this.state.logined){
-      return <Redirect to ='/home'></Redirect>
-    }
+  //   }
+  // chuyenHuong(){
+  //   if (this.state.logined){
+  //     return <Redirect to ='/home'></Redirect>
+  //   }
 
+  // }
+  dangxuat =() =>{
+    let cooki = new Cookies()
+    cooki.set ('dadangnhap', 'thanhcong')
+    this.setState({
+      logined: cooki.get('dadangnhap') === 'out'
+    })
+  }
+
+  diRa(){
+    if (this.state.logined){
+      return <Redirect to ='/login'></Redirect>
   }
 
 
@@ -36,7 +49,8 @@ class LoginPage extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {this.chuyenHuong()}
+        {/* {this.chuyenHuong()} */}
+        {this.diRa()}
         <div className="nenden">
           <div className="nenxanh">
             <div className="nenvang container">
@@ -64,7 +78,8 @@ class LoginPage extends React.Component {
                   </form>
 
                   <div className="justify-content-center mt-1 login_container">
-                    <button type="button" className="btn login_btn" onClick ={() => this.clicked()}>Login</button>
+                    <button type="button" className="btn nut login_btn mb-2" onClick ={() => this.dangnhap()}>Login</button>
+                    <button type="button" className="btn  nut logout_btn" onClick ={() => this.dangxuat()}>Logout</button>
                   </div>
                   <div className="mt-2">
                     <div className="justify-content-center links">
@@ -92,6 +107,7 @@ class LoginPage extends React.Component {
       </React.Fragment>
     )
   }
+}
 }
 
 
