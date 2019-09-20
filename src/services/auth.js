@@ -1,12 +1,12 @@
 import React from 'react';
-import Cookie from 'universal-cookie'
+import Cookies from 'universal-cookie'
 import { Redirect } from 'react-router-dom'
 class Auth extends React.Component {
     constructor(props) {
         super(props)
-        const cookies = new Cookie()
+        const cooki = new Cookies()
         this.state = {
-            logined: cookies.get('dadangnhap')
+            logined: cooki.get('dadangnhap')
         }
         console.log(this.state)
     }
