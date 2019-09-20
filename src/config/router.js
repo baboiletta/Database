@@ -12,26 +12,25 @@ import Auth from '../services/auth';
 
 
 const MainRouter = () => (
-    <main>
-        <BrowserRouter>
-            <Switch>
-                <Route exact path='/' render={
-                    () => (
-                        <Auth orRedirectTo="/login" orRender={
-                            <Profile></Profile>
-                        }></Auth>
-                    )
-                }></Route>
-                <Route path='/login' exact component={LoginPage}></Route>
-                <Route path='/khoadaotao' exact component={KhoaDaoTao}></Route>
-                <Route path='/gioithieu' exact component={GioiThieu}></Route>
-                <Route path='/tuyendung' exact component={TuyenDung}></Route>
-                <Route path='/blog' exact component={Blog}></Route>
-                <Route path='/lienhe' exact component={LienHe}></Route>
-                <Route path='/profile' exact component={Profile}></Route>
-            </Switch>
-        </BrowserRouter>
-    </main>
+	<main>    
+		<BrowserRouter>
+			<Switch>
+				<Route exact path='/' component={TrangChu}></Route>
+				<Route path='/login' exact component={LoginPage}></Route>
+				<Route path='/khoadaotao' exact component={KhoaDaoTao}></Route>
+				<Route path='/gioithieu' exact component={GioiThieu}></Route>
+				<Route path='/tuyendung' exact component={TuyenDung}></Route>
+				<Route path='/blog' exact component={Blog}></Route>
+				<Route path='/lienhe' exact component={LienHe}></Route>
+				<Route path='/profile' render={
+					() => (
+						<Auth sai='/login' dung={
+							<Profile></Profile>
+						}></Auth>)
+				}></Route>
+			</Switch>
+		</BrowserRouter>
+	</main>
 )
 
 // const MainRouter = () => {

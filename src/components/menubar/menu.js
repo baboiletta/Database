@@ -6,11 +6,11 @@ class MenuBar extends React.Component {
 
             <React.Fragment>
                 <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">Green Academy</Navbar.Brand>
+                    <Navbar.Brand href="/">Green Academy</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link href="/">Trang Chu</Nav.Link>
+                            <Nav.Link href="/profile">Ptofile</Nav.Link>
                             {/* <Nav.Link href="/khoadaotao">Khoa Dao Tao</Nav.Link> */}
                             <NavDropdown title="Khoa Dao Tao" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
