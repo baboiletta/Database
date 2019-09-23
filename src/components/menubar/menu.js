@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { FaUser } from "react-icons/fa";
+
 class MenuBar extends React.Component {
 <<<<<<< HEAD
     render() {
@@ -69,6 +71,11 @@ class MenuBar extends React.Component {
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button variant="outline-success">Search</Button>
+              <FaUser />
+              <NavDropdown title="   " id="basic-nav-dropdown">
+                <NavDropdown.Item href="/logout">Dang xuat</NavDropdown.Item>
+            
+              </NavDropdown>
             </Form>
           </Navbar.Collapse>
         </Navbar>
