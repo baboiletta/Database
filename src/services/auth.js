@@ -1,30 +1,25 @@
 import React from 'react';
-import  Cookie  from 'universal-cookie'
-import { Redirect} from 'react-router-dom'
-class Auth extends React.Component{
-    constructor(props){
+import Cookies from 'universal-cookie'
+import { Redirect } from 'react-router-dom'
+class Auth extends React.Component {
+    constructor(props) {
         super(props)
-        const cookies = new Cookie()
+        const cooki = new Cookies()
         this.state = {
-            logined: cookies.get('islogin')
+            logined: cooki.get('dadangnhap')
         }
         console.log(this.state)
-
     }
-
-    renderRedirectTo(){
-        if ( this.state.logined === 'true'){
-            return this.props.orRender
-
+    renderRedirectTo() {
+        if (this.state.logined === 'thanhcong') {
+            return this.props.dung
         }
         else {
-            return <Redirect to = {this.props.orRedirectTo}></Redirect>
+            return <Redirect to={this.props.sai}></Redirect>
         }
     }
-        
-    
-    render(){
-        return(
+   render() {
+        return (
             <React.Fragment>
                 {this.renderRedirectTo()}
             </React.Fragment>
