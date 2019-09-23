@@ -11,7 +11,6 @@ class MenuBar extends React.Component {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Trang Chu</Nav.Link>
-                            {/* <Nav.Link href="/khoadaotao">Khoa Dao Tao</Nav.Link> */}
                             <NavDropdown title="Khoa Dao Tao" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Web Design</NavDropdown.Item>
