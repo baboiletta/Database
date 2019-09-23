@@ -5,52 +5,54 @@ import { FaUser } from "react-icons/fa";
 import { FaKey } from "react-icons/fa";
 import Cookies from 'universal-cookie';
 import { Redirect } from 'react-router-dom'
+import Logout from '../log out/logout';
 
 
 class LoginPage extends React.Component {
   constructor(){
     super()
     this.state = { 
-      // logined: false
-      logined: true
+      logined: false
+      // logined: true
     }
 
   }
-  // dangnhap = (event) => {
-  //   // console.log(event)
-  //   let cooki = new Cookies()
-  //   cooki.set('dadangnhap','thanhcong')
-  //   this.setState({
-  //     logined: cooki.get('dadangnhap') ==='thanhcong'
-  //   })
-    
-  //   }
-  // chuyenHuong(){
-  //   if (this.state.logined){
-  //     return <Redirect to ='/home'></Redirect>
-  //   }
-
-  // }
-  dangxuat =() =>{
+  dangnhap = (event) => {
+    // console.log(event)
     let cooki = new Cookies()
-    cooki.set ('dadangnhap', 'thanhcong')
+    cooki.set('dadangnhap','thanhcong')
     this.setState({
-      logined: cooki.get('dadangnhap') === 'out'
+      logined: cooki.get('dadangnhap') ==='thanhcong'
     })
-  }
-
-  diRa(){
+    
+    }
+  chuyenHuong(){
     if (this.state.logined){
-      return <Redirect to ='/login'></Redirect>
+      return <Redirect to ='/home'></Redirect>
+    }
+
   }
+//   dangxuat =() =>{
+//     let cooki = new Cookies()
+//     cooki.set ('dadangnhap', 'out')
+//     this.setState({
+//       logined: cooki.get('dadangnhap') === 'out'
+//     })
+//   }
+
+//   diRa(){
+//     if (this.state.logined){
+//       return <Redirect to ='/login'></Redirect>
+//   }
+// }
 
 
 
   render() {
     return (
       <React.Fragment>
-        {/* {this.chuyenHuong()} */}
-        {this.diRa()}
+        {this.chuyenHuong()}
+        {/* {this.diRa()} */}
         <div className="nenden">
           <div className="nenxanh">
             <div className="nenvang container">
@@ -79,7 +81,7 @@ class LoginPage extends React.Component {
 
                   <div className="justify-content-center mt-1 login_container">
                     <button type="button" className="btn nut login_btn mb-2" onClick ={() => this.dangnhap()}>Login</button>
-                    <button type="button" className="btn  nut logout_btn" onClick ={() => this.dangxuat()}>Logout</button>
+                   <Logout></Logout>
                   </div>
                   <div className="mt-2">
                     <div className="justify-content-center links">
@@ -108,7 +110,7 @@ class LoginPage extends React.Component {
     )
   }
 }
-}
+
 
 
 
