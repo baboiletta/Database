@@ -1,9 +1,10 @@
 import React from 'react';
+import { locale } from '../../config/local';
 
 class TrangChu extends React.Component{
     render(){
         return(
-            <div>Trang Chu</div>
+            <div>{locale.home}</div>
         )
     }
 }
