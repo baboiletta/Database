@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../../components/banner/banner';
 import Content from '../../components/content-home/ct_home';
 import './trangchu.css';
+import { locale } from '../../config/local';
 
 
 class TrangChu extends React.Component {
