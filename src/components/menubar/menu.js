@@ -1,95 +1,71 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
 import { FaUser } from "react-icons/fa";
+import { locale } from '../../config/local'
+import NgonNgu from '../setlocale/setlocal';
+import Cookies from 'universal-cookie';
+import { ListenService } from '../../services/listen';
 
 class MenuBar extends React.Component {
-<<<<<<< HEAD
+
+  constructor() {
+    super()
+  }
+
+  switchLanguage = (lag) => {
+    let cooki = new Cookies()
+    cooki.set('lang', lag)
+    locale.setLanguage(lag)
+    this.setState({})
+    ListenService.switchLang(lag)
+  }
+
     render() {
-        return (
 
-            <React.Fragment>
-                <Navbar bg="light" expand="lg">
-                    <Navbar.Brand href="#home">Green Academy</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="mr-auto">
-                            <Nav.Link href="/">Trang Chu</Nav.Link>
-                            <NavDropdown title="Khoa Dao Tao" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Web Design</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Mobile</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">FullStack Developer</NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="/blog">Blog</Nav.Link>
-                            <Nav.Link href="/gioithieu">Gioi Thieu</Nav.Link>
-                            <Nav.Link href="/tuyendung">Tuyen Dung</Nav.Link>
-                            <Nav.Link href="/lienhe">Lien He</Nav.Link>
-
-                        </Nav>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
-                    </Navbar.Collapse>
-                </Navbar>
-
-
-            </React.Fragment>
-
-
-
-
-
-        )
-    }
-=======
-  render() {
     return (
 
       <React.Fragment>
-        <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">Green Academy</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav " />
-          <Navbar.Collapse id="basic-navbar-nav nav-stick">
-            <Nav className="mr-auto">
-              <Nav.Link href="/profile">Ptofile</Nav.Link>
-              {/* <Nav.Link href="/khoadaotao">Khoa Dao Tao</Nav.Link> */}
-              <NavDropdown title="Khoa Dao Tao" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Web Design</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Mobile</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">FullStack Developer</NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/blog">Blog</Nav.Link>
-              <Nav.Link href="/gioithieu">Gioi Thieu</Nav.Link>
-              <Nav.Link href="/tuyendung">Tuyen Dung</Nav.Link>
-              <Nav.Link href="/lienhe">Lien He</Nav.Link>
 
-            </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-success">Search</Button>
-              <FaUser />
-              <NavDropdown title="   " id="basic-nav-dropdown">
-                <NavDropdown.Item href="/logout">Dang xuat</NavDropdown.Item>
-            
-              </NavDropdown>
-            </Form>
-          </Navbar.Collapse>
-        </Navbar>
-
+        <div className="container-fluid">
+          <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="/">Green Academy</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="mr-auto">
+                {/* <Nav.Link href="/profile">{locale.training}</Nav.Link> */}
+                <NavDropdown title={locale.training} id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">Tieng Han</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">Web Design</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Mobile</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">FullStack Developer</NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="/blog">{locale.blog}</Nav.Link>
+                <Nav.Link href="/gioithieu">{locale.about}</Nav.Link>
+                <Nav.Link href="/tuyendung">{locale.hiring}</Nav.Link>
+                <Nav.Link href="/lienhe">{locale.contact}</Nav.Link>
+              </Nav>
+              <Form inline>
+                <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                <Button variant="outline-success" className="mr-2">{locale.search}</Button>
+                <FaUser />
+                <NavDropdown title="   " id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/logout">{locale.logout}</NavDropdown.Item>
+                </NavDropdown>
+                {/* <Button className="primary" onClick={() => this.switchLanguage()}> {locale.lang}</Button> */}
+                <NavDropdown title={locale.lag} id="basic-nav-dropdown">
+                  <NavDropdown.Item onSelect={() => this.switchLanguage('vi')} >{locale.vi}</NavDropdown.Item>
+                  <NavDropdown.Item onSelect={() => this.switchLanguage('en')} >{locale.en}</NavDropdown.Item>
+                </NavDropdown>
+              </Form>
+            </Navbar.Collapse>
+          </Navbar>
+        </div>
 
       </React.Fragment>
-
-
-
-
-
     )
   }
->>>>>>> c4dbaa2d21aa05c1997ac165b625af017af67a1d
+
 }
 
 export default MenuBar
