@@ -11,7 +11,7 @@ class TrangChu extends React.Component {
                 <Banner></Banner>
                 <div class="container">
                     <div class="row">
-                        <div className="col-sm-8 ND ">
+                        <div className="col-sm-8 offset-2 ND ">
                             <Content tieude="Man must explore, and this is exploration at its greatest "
                                 noidung="Problems look mighty small from 150 miles up "
                             ></Content>
