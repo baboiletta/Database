@@ -50,8 +50,8 @@ class MenuBar extends React.Component {
       <React.Fragment>
         <Navbar bg="light" expand="lg">
           <Navbar.Brand href="/">Green Academy</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar.Toggle aria-controls="basic-navbar-nav " />
+          <Navbar.Collapse id="basic-navbar-nav nav-stick">
             <Nav className="mr-auto">
               <Nav.Link href="/profile">Ptofile</Nav.Link>
               {/* <Nav.Link href="/khoadaotao">Khoa Dao Tao</Nav.Link> */}

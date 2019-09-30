@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,YAAY;EACR,UAAU,EAAE,IAAI;EAChB,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,eAAE;IACE,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,IAAI;EAErB,cAAC;IACG,SAAS,EAAE,IAAI",
+"sources": ["trangchu.scss"],
+"names": [],
+"file": "trangchu.css"
+}
