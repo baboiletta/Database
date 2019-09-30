@@ -7,6 +7,7 @@ import Cookies from 'universal-cookie';
 import { ListenService } from '../../services/listen';
 
 class MenuBar extends React.Component {
+
   constructor() {
     super()
   }
@@ -18,10 +19,13 @@ class MenuBar extends React.Component {
     this.setState({})
     ListenService.switchLang(lag)
   }
-  render() {
+
+    render() {
+
     return (
 
       <React.Fragment>
+
         <div className="container-fluid">
           <Navbar bg="light" expand="lg">
             <Navbar.Brand href="/">Green Academy</Navbar.Brand>
@@ -57,9 +61,11 @@ class MenuBar extends React.Component {
             </Navbar.Collapse>
           </Navbar>
         </div>
+
       </React.Fragment>
     )
   }
+
 }
 
 export default MenuBar
