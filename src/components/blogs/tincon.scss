@@ -1,0 +1,47 @@
+$cardheight: 700px;
+$imgheight: 400px;
+$fontti: 30px;
+$fontte: 16px;
+$wicthnut:120px;
+$heightnut: 38px;
+
+
+.mottin{
+    height: $cardheight;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .tieude{
+        font-size: $fontti;
+        font-weight: 900;
+        text-align: center;
+    }
+    .anhtieude{
+        width: 100%;
+        height: $imgheight;
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        margin: 0;
+    }
+    .ochua {
+        top: 72%;
+        position: absolute;
+        left: 0;
+        font-size: 16px; 
+        font-weight: 500;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        z-index: 5;
+        height: 150px;
+    }
+    .nut{
+        width: $wicthnut;
+        height: $heightnut;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -($wicthnut/2);
+    }
+}
