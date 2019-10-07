@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,QAAQ;EACJ,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,CAAC;EACR,GAAG,EAPD,IAAI",
+"sources": ["search.scss"],
+"names": [],
+"file": "search.css"
+}

@@ -9,13 +9,17 @@ import b4 from './../../assets/anh/img/b4.jpg';
 import b5 from './../../assets/anh/img/b5.jpg';
 import b6 from './../../assets/anh/img/b6.jpg';
 import b7 from './../../assets/anh/img/b7.jpg';
+import dulieu from './../../components/dulieu/dulieu.json'
+import './blog.scss'
+import Searching from '../../components/search/search';
+import Recent from '../../components/recentPost/recent';
 
 class Blog extends React.Component {
     render() {
         return (
             <React.Fragment>
 
-                <div class="container">
+                <div class="container blog">
                     <div class="row">
                         <div class="col-sm-8">
                             <Tincon ba={b1}
@@ -111,9 +115,24 @@ class Blog extends React.Component {
                              There are indeed several ways on how you can keep the right"
                                 ></Tincon>
                             
+                </div> 
+                {/* hetcol8 */}
+                <div class="col-sm-4 search">
+                    <Searching></Searching>
+                    {dulieu.map((giatri, key) => (
+                        <Recent key={key}
+                        id = {giatri.id}
+                        title = {giatri.title}></Recent>
+
+                   ))}
+               
+            
                 </div>
+                {/* hetcol4 */}
                 </div>
+                {/* hetrow */}
                 </div>
+                {/* hetcontainer */}
             
             {/* <FooterPage></FooterPage> */}
 
@@ -125,3 +144,6 @@ class Blog extends React.Component {
 }
 
 export default Blog
+
+
+// 
