@@ -25,126 +25,45 @@ class Blog extends React.Component {
                 <div class="container blog">
                     <div class="row">
                         <div class="col-sm-8">
-                            <Tincon ba={b1}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                                <Tincon ba={b2}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                            <Tincon ba={b3}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                            <Tincon ba={b4}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                     
-                            <Tincon ba={b5}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                            <Tincon ba={b6}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon><hr/>
-                            <Tincon ba={b7}
-                                title="A Guide For Entrepreneurs to Achieve a Work-Life Balance"
-                                text="Being an entrepreneur is no easy task. The long hours of work can be
-                                frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right  frustrating and can sometimes 
-                             lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the rightThere are indeed several ways on
-                              how you can keep the right  frustrating and can sometimes lead to burnout.Is it even possible to maintain a
-                             work-life balance amidst the most stringent of working hours? The answer is a definite Yes!
-                             There are indeed several ways on how you can keep the right"
-                                ></Tincon>
-                            
-                </div> 
-                {/* hetcol8 */}
-                <div class="col-sm-4 search">
-                    <Searching></Searching>
-                    {dulieu.map((giatri, key) => (
-                        <Recent key={key}
-                        id = {giatri.id}
-                        title = {giatri.title}></Recent>
-
-                   ))}
-               
-            
+                            {
+                                dulieu.map((value, key) => (
+                                    <Tincon key={key}
+                                        id={value.id}
+                                        title={value.title}
+                                        text={value.text}
+                                        ba={value.ba}
+                                    ></Tincon>
+                                ))
+                            }
+                            <hr></hr>
+                        </div>
+                        {/* hetcol8 */}
+                        <div class="col-sm-4 search">
+                            <Searching></Searching>
+                            <div className="khoiphai">
+                                <h4>Tin Mới Nhất</h4>
+                                {dulieu.map((value, key) => {
+                                    if (key <= 5) {
+                                        return(
+                                        <Recent key={key}
+                                            id={value.id}
+                                            title={value.title}
+                                            ba={value.ba}></Recent>)
+                                    }
+                                    
+                                })}
+                            </div>
+                        </div>
+                        {/* hetcol4 */}
+                
+                    {/* hetrow */}
                 </div>
-                {/* hetcol4 */}
-                </div>
-                {/* hetrow */}
                 </div>
                 {/* hetcontainer */}
-            
-            {/* <FooterPage></FooterPage> */}
+                <div>{locale.blog}</div>
+                {/* <FooterPage></FooterPage> */}
 
-            
 
-                 <div>{locale.blog}</div>
-            <FooterPage></FooterPage>
-
-        
             </React.Fragment >
         )
     }
@@ -153,4 +72,3 @@ class Blog extends React.Component {
 export default Blog
 
 
-// 
