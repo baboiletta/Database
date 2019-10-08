@@ -1,7 +1,9 @@
 import React from 'react';
+import { locale } from '../../config/local';
 import Banner from '../../components/banner/banner';
 import Content from '../../components/content-home/ct_home';
 import './trangchu.css';
+
 
 
 class TrangChu extends React.Component {
@@ -11,7 +13,7 @@ class TrangChu extends React.Component {
                 <Banner></Banner>
                 <div class="container">
                     <div class="row">
-                        <div className="col-sm-8 ND ">
+                        <div className="col-sm-8 offset-2 ND ">
                             <Content tieude="Man must explore, and this is exploration at its greatest "
                                 noidung="Problems look mighty small from 150 miles up "
                             ></Content>
@@ -38,6 +40,7 @@ class TrangChu extends React.Component {
 
 
             </React.Fragment>
+
         )
     }
 }

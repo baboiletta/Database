@@ -1,1 +1,41 @@
-*{margin: 0; padding: 0}
+.menutop {
+  width: 434.83px;
+
+  .mr-auto {
+    ._1 {
+      width: 47.84px;
+    }
+
+    ._2 {
+      width: 87.41px;
+    }
+
+    ._3 {
+      width: 101.73px;
+    }
+
+    ._4 {
+      width: 68.94px;
+    }
+
+    ._6 {
+      width: 128.92px;
+    }
+  }
+
+  .menuleft {
+    width: 496.16px;
+    .text {
+      width: 210px;
+    }
+
+    .search {
+      width: 91.73px
+    }
+
+    .trans {
+      width: 116.77px
+    }
+  }
+
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import FooterPage from '../../components/footer/footer';
+
 import MenuBar from '../../components/menubar/menu';
 import Tincon from '../../components/blogs/tincon';
 import b1 from './../../assets/anh/img/b1.jpg';
@@ -14,11 +15,13 @@ import './blog.scss'
 import Searching from '../../components/search/search';
 import Recent from '../../components/recentPost/recent';
 
+import { locale } from '../../config/local';
+
+
 class Blog extends React.Component {
     render() {
         return (
             <React.Fragment>
-
                 <div class="container blog">
                     <div class="row">
                         <div class="col-sm-8">
@@ -137,6 +140,10 @@ class Blog extends React.Component {
             {/* <FooterPage></FooterPage> */}
 
             
+
+                 <div>{locale.blog}</div>
+            <FooterPage></FooterPage>
+
         
             </React.Fragment >
         )
