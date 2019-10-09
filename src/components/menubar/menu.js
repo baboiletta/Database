@@ -6,6 +6,7 @@ import NgonNgu from '../setlocale/setlocal';
 import Cookies from 'universal-cookie';
 import { ListenService } from '../../services/listen';
 import './menu.scss'
+import Searching from '../search/search';
 
 class MenuBar extends React.Component {
   constructor() {
@@ -44,10 +45,8 @@ class MenuBar extends React.Component {
                   <Nav.Link className ="_4" href="/lienhe">{locale.contact}</Nav.Link>
                 </Nav>
                 <Form inline className="menuleft">
-                  <FormControl type="text" placeholder="Search" className="text mr-sm-2" />
-                  <Button variant="outline-success" className="mr-2 search">{locale.search}</Button>
-                  <FaUser />
-                  <NavDropdown title="   " id="basic-nav-dropdown">
+                  <Searching></Searching>
+                  <NavDropdown title={FaUser} id="basic-nav-dropdown">
                     <NavDropdown.Item href="/logout">{locale.logout}</NavDropdown.Item>
                   </NavDropdown>
                   {/* <Button className="primary" onClick={() => this.switchLanguage()}> {locale.lang}</Button> */}

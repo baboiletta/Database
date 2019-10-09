@@ -9,7 +9,6 @@ import TuyenDung from '../pages/tuyendung/tuyendung';
 import LienHe from '../pages/lienhe/lienhe';
 import Profile from '../pages/profile/profile';
 import Auth from '../services/auth';
-import { FaUser } from "react-icons/fa";
 import Logout from '../pages/log out/logout';
 import Detail from '../components/tinchitiet/Detail';
 
