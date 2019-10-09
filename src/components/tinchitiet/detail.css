@@ -1,0 +1,23 @@
+.col-sm-8.bo {
+  position: relative;
+  margin: 0;
+  padding: 0; }
+  .col-sm-8.bo .anhtieude {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  .col-sm-8.bo .lead {
+    font-size: 35px;
+    font-weight: 800;
+    position: absolute;
+    z-index: 5;
+    top: 465px; }
+  .col-sm-8.bo .noidung {
+    position: absolute;
+    top: 600px;
+    z-index: 6; }
+
+/*# sourceMappingURL=detail.css.map */

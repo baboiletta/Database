@@ -1,11 +1,12 @@
 
-$top :48px;
+$top :10px;
+$right: 264px;
 
 .timkiem{
     padding: 0;
     margin: 0;
     position: absolute;
-    right: 53px;
+    right: $right;
     top: $top;
 }
 
