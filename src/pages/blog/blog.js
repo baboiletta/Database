@@ -25,7 +25,7 @@ class Blog extends React.Component {
                                         title={value.title}
                                         text={value.text}
                                         ba={value.ba}
-                                     
+                                        chitiet={value.chitiet}
                                     ></Tincon>
                                 ))
                             }
@@ -37,9 +37,8 @@ class Blog extends React.Component {
                             <div className="khoiphai">
                                 <h4>Tin Mới Nhất</h4>
                                 {
-                                   
                                     dulieu.map((value, key) => {
-                                    if(value.id !== this.props.match.parrams.id){
+                                    if(value.id != this.props.match.params.id){
                                         if(key <=5) {
                                         
                                             return(
@@ -48,8 +47,6 @@ class Blog extends React.Component {
                                                 title={value.title}
                                                 ba={value.ba}></Recent>)}}
                                     }
-                                    
-                                    
                                 )}
                             </div>
                         </div>

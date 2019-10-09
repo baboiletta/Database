@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import dulieu from './../dulieu/dulieu.json'
-import Recent from './../recentPost/recent'
+
 
 class Relate extends Component {
     constructor(props) {
         super(props);
-        
+
     }
-    
+
     render() {
         return (
-            <div></div>
+            
+                <div className="col-sm-3">
+                    <a href=""> <h5 className=" tieude phu">{this.props.title}</h5>
+                        <img className="anhtieude con" src={this.props.ba} alt="Card image cap" />
+                    </a>
+                </div>
+          
         )
     }
 }

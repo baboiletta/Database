@@ -1,35 +1,38 @@
 $ftt :35px;
-$topl :465px;
-$topn: 600px;
+$topl :707px;
+$topn: 106%;
 
-
-.col-sm-8.bo {
+.to {
     position: relative;
-    margin: 0;
-    padding: 0;
-    .anhtieude{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        padding: 0;}
-    .lead{
-        font-size: 35px;
-        font-weight: 800;
-        position: absolute;
-        z-index: 5;
-        top:$topl;
-    }
-    .noidung{
-        position: absolute;
-        top:$topn;
-        z-index: 6;
+    height: 2000px;
+
+       &.col-sm-12.bo {
+            position: relative;
+            // margin: 0;
+            // padding: 0;
+            .anhtieude{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;}
+            .lead{
+                font-size: 35px;
+                font-weight: 800;
+                z-index: 5;
+                margin-top: $topl;
+                text-align: center;
+            }
+            .noidung{
+                position: absolute;
+                top:$topn;
+                z-index: 6;
 
 
+            }
 
-
-    }
-
+            }
+      
 
 }
