@@ -1,0 +1,19 @@
+.recent {
+  height: 215px; }
+  .recent h5.tieude.phu {
+    text-decoration: none !important;
+    font-size: 16px;
+    color: #332c2ce3;
+    font-weight: 500;
+    font-style: italic; }
+  .recent img.anhtieude.con {
+    width: 75%;
+    height: auto;
+    /* padding-left: 50px; */
+    position: absolute;
+    left: 44px;
+    top: 53px;
+    margin: 0;
+    padding: 0; }
+
+/*# sourceMappingURL=recent.css.map */

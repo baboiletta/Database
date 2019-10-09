@@ -11,6 +11,7 @@ import Profile from '../pages/profile/profile';
 import Auth from '../services/auth';
 import { FaUser } from "react-icons/fa";
 import Logout from '../pages/log out/logout';
+import Detail from '../components/tinchitiet/Detail';
 
 
 const MainRouter = () => (
@@ -24,6 +25,7 @@ const MainRouter = () => (
 				<Route path='/tuyendung' exact component={TuyenDung}></Route>
 				<Route path='/blog' exact component={Blog}></Route>
 				<Route path='/lienhe' exact component={LienHe}></Route>
+				<Route path='/blog/:slug.:id.html' exact component={Detail}></Route>
 				<Route path='/profile' render={
 					() => (
 						<Auth sai='/login' dung={

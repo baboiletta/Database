@@ -1,44 +1,69 @@
 [
+    {
+    
+        "id" :1,
+        "title" :"How to Choose the Best Enterprise Asset Management Software for Your Business",
+        "text" : "Searching for the simple app ideas that make money? Hmm! We have something interesting for you. Generally, people create an app for business purposes or marketing their own perspectives. Do you know most apps couldn’t make money or profitable for owners? Meanwhile, the reason is the profitable app ideas and concocting plans for app creation. […]",
+        "ba": "https://blog.creative-tim.com/wp-content/uploads/2019/01/lee-campbell-106610-unsplash-730x410.jpg"
+    },
+        
 
     {
     
         "id" :2,
-        "title" :"The Ultimate Blogger Outreach Guide for Marketers in 2019"
+        "title" :"The Ultimate Blogger Outreach Guide for Marketers in 2019",
+        "text" :"Creating a website is not as easy as 1-2-3. A design and development project can eat up resources if not done properly – luckily, there are open source tools available that can help a developer produce beautiful and functional websites. These tools are created to be open and accessible for people who need help on […]",
+        "ba": "https://blog.creative-tim.com/wp-content/uploads/2019/09/christopher-gower-m_HRfLhgABo-unsplash-1-730x410.jpg"
+    
+
     },
     {
     
         "id" :3,
-        "title" :"Web Development: 4 Creative Ways to Design a User-Friendly Website"
+        "title" :"Web Development: 4 Creative Ways to Design a User-Friendly Website",
+        "text" : "Bootstrap templates are very popular these days, and you can find a great variety of them even for free. We at Creative Tim started creating these bootstrap templates 5 years ago and recently started developing back-end solutions. Before we present you our back-end products (pretty soon), let’s have a look at our all-time favorite freebies […]",
+        "ba":"https://blog.creative-tim.com/wp-content/uploads/2019/09/vue-js-header-730x410.jpg"
+        
     },
     {
     
         "id" :4,
-        "title" :"Can You Imagine How Do You Visualize The Web Development In The Future?"
+        "title" :"Can You Imagine How Do You Visualize The Web Development In The Future?",
+        "text" :"Many professions require help from web technologies to increases their visibility on the internet but how do they get into a trend based on their customer needs? Web development has bound with multiple features of the platform to enhance the developer for building a well-structured user experience. Developing websites assist with various criteria such as […],",
+        "ba": "https://blog.creative-tim.com/wp-content/uploads/2019/09/App-idea-make-money-730x410.jpg"
+
+
+       
     },
     {
     
         "id" :5,
-        "title" :"The Ultimate Blogger Outreach Guide for Marketers in 2019"
+        "title" :"15+ Cool Kits and Dashboards for October 2019",
+        "text" : "It is a well-established fact that having a website is important. However, note that not all websites are user-friendly. In fact, most sites lose their most valuable visitors in just a matter of seconds after visiting their web pages. That’s because a lot may find so many obstacles in finding the information they need. So, […]","ba":"https://blog.creative-tim.com/wp-content/uploads/2019/10/Enterprise-Asset-Management-2-730x410.jpg"
     },
     {
     
         "id" :6,
-        "title" :"A Guide For Entrepreneurs to Achieve a Work-Life Balance"
+        "title" :"10 Most Rated Open Source Tools for Web Development & Design this 2019",
+        "text" : "Being an entrepreneur is no easy task. The long hours of work can be frustrating and can sometimes lead to burnout. Is it even possible to maintain a work-life balance amidst the most stringent of working hours? The answer is a definite Yes!  There are indeed several ways on how you can keep the right […]","ba":"https://blog.creative-tim.com/wp-content/uploads/2019/10/burst-kUqqaRjJuw0-unsplash-730x410.jpg"
     },
     {
     
         "id" :7,
-        "title" :"Web Development: 4 Creative Ways to Design a User-Friendly Website"
+        "title" :"8 Key Elements of Modern Web Design You Should Apply on Your Website",
+        "text": "Blogger outreach is all about nurturing relationships with famous personalities in your niche. When you succeed in that, then you are able to build rapport which goes a long way in making your brand more visible and prominent in the industry. However, before you get started, you need to understand why you need blogger outreach […]","ba":"https://blog.creative-tim.com/wp-content/uploads/2019/10/office-730x410.jpg"
     },
     {
     
         "id" :8,
-        "title" :"Can You Imagine How Do You Visualize The Web Development In The Future?"
+        "title" :"Top 5 Simple App Ideas That Make Money",
+        "text": "Asset selection, maintenance, verification, and updating play an essential role in determining the overall performance and profitability of a company or organization. Asset management rotates around making the best decisions in those areas, also promoting these means based on the KPI. Effective implementation and deployment of enterprise asset management programs are a vital part of […]","ba":"https://blog.creative-tim.com/wp-content/uploads/2019/09/pexels-photo-935756-730x410.jpeg"
     },
     {
     
         "id" :9,
-        "title" :"15+ Cool Kits and Dashboards for October 2019"
+        "title" :"Building Web Apps with Vue JS & Firebase",
+        "text": "Creating a website is not as easy as 1-2-3. A design and development project can eat up resources if not done properly – luckily, there are open source tools available that can help a developer produce beautiful and functional websites. These tools are created to be open and accessible for people who need help on […]","ba":"https://blog.creative-tim.com/wp-content/uploads/2019/10/web-development-730x410.jpeg"
     }
 ]
 
